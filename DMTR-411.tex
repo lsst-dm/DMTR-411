@@ -32,7 +32,7 @@
 
 \title{LDM-503-16a: Science Pipelines Fall 2022 Release Test Plan Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2023-08-16 }
+\date{ 2023-08-17 }
 \author{ Yusra AlSayyad }
 
 \input{history_and_info.tex}
@@ -56,7 +56,7 @@ The most recent change to the document repository was on \vcsDate.
 \subsection{Objectives}
 \label{sect:objectives}
 
- This test plan checks for the successful release of the Fall 2023
+ This test plan checks for the successful release of the Fall 2022
 release of the LSST Science Pipelines version 25.0.0\\[2\baselineskip]It
 will demonstrate that:\\
 
@@ -91,7 +91,7 @@ The overall strategy for testing and verification within Rubin Data
 Management is described in \citeds{LDM-503}.\\
 This test plan specifically verifies successful completion of milestone
 LDM-503-16a, which refers to the Fall 2022 release of the LSST Science
-Pipelines (and Spring 2023 verification of such)~
+Pipelines (and Spring 2023 verification of such).
 
 
 
@@ -135,7 +135,7 @@ Section \ref{sect:overview} provides a summary of the test results, including an
 an overall assessment statement and suggestions for possible improvements.
 Section \ref{sect:detailedtestresults} provides detailed results for each step in each test case.
 
-The current status of test plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P107}{LVV-P107} in Jira is \textbf{ Draft }.
+The current status of test plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P107}{LVV-P107} in Jira is \textbf{ Approved }.
 
 \subsection{References}
 \label{sect:references}
@@ -160,13 +160,13 @@ This can be performed from any internet-connected system with a web
 browser, and will, in this case, likely be executed from the tester's
 laptop.\\[2\baselineskip]Where tests require installation or execution
 of specific Science Pipelines components, this will be carried out on
-the ``lsst-devl'' shared developer infrastructure at the Rubin Data
-Facility. This infrastructure provides a number of powerful (24core,
-256GB RAM) systems accessible to Rubin developers. At time of writing,
-they are running ~Red Hat Enterprise Linux
-(4.18.0-372.32.1.el8\_6.x86\_64); in practice, and similar operating
-system is appropriate for this test plan, as long as it complies with
-the published installation prerequisites of the LSST Science Pipelines.
+the shared developer infrastructure at the Rubin Data Facility. This
+infrastructure provides a number of powerful systems accessible to Rubin
+developers. At time of writing, they are running ~Red Hat Enterprise
+Linux (4.18.0-372.32.1.el8\_6.x86\_64); in practice, and similar
+operating system is appropriate for this test plan, as long as it
+complies with the published installation prerequisites of the LSST
+Science Pipelines.
 
 
 
@@ -240,7 +240,7 @@ Yusra AlSayyad }
 \begin{longtable}{p{2cm}cp{2.3cm}p{8.6cm}p{2.3cm}}
 \toprule
 \multicolumn{2}{r}{ T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P107}{LVV-P107}:} &
-\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-16a: Science Pipelines Fall 2022 Release Test Plan }} & Draft \\\hline
+\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-16a: Science Pipelines Fall 2022 Release Test Plan }} & Approved \\\hline
 \multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C263}{LVV-C263}:} &
 \multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-16a: Science Pipelines Fall 2022 Release }} & Done \\\hline
 \textbf{Test Cases} &  \textbf{Ver.} & \textbf{Status} & \textbf{Comment} & \textbf{Issues} \\\toprule
@@ -279,12 +279,15 @@ Yusra AlSayyad }
 \subsection{Overall Assessment}
 \label{sect:overallassessment}
 
-Not yet available.
+All tests described in this plan were completed successfully. The
+lsstinstall method automatically found and installed the appropriate
+binaries of the LSST Science Pipelines v25.0.0 on the USDF developer
+hardware.\\[2\baselineskip]
 
 \subsection{Recommended Improvements}
 \label{sect:recommendations}
 
-Not yet available.
+No recommendations.~
 
 \newpage
 \section{Detailed Test Results}
